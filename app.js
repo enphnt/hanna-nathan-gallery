@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import ImageGallery from '../src/ImageGallery';
 
-const PREFIX_URL = 'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/';
+const PREFIX_URL = 'https://raw.githubusercontent.com/enphnt/hanna-nathan-gallery/master/static/';
 
 class App extends React.Component {
 
@@ -105,10 +105,10 @@ class App extends React.Component {
 
   _getStaticImages() {
     let images = [];
-    for (let i = 2; i < 12; i++) {
+    for (let i = 2; i < 41; i++) {
       images.push({
         original: `${PREFIX_URL}${i}.jpg`,
-        thumbnail:`${PREFIX_URL}${i}t.jpg`
+        thumbnail:`${PREFIX_URL}${i}_tn.jpg`
       });
     }
 
