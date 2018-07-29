@@ -169,6 +169,7 @@ class App extends React.Component {
           </h1>          
           </div>
         </div>
+
         <ImageGallery
           ref={i => this._imageGallery = i}
           items={this.images}
@@ -184,13 +185,25 @@ class App extends React.Component {
           showFullscreenButton={this.state.showFullscreenButton && this.state.showGalleryFullscreenButton}
           showPlayButton={this.state.showPlayButton && this.state.showGalleryPlayButton}
           showThumbnails={this.state.showThumbnails}
-          showIndex={this.state.showIndex}
+          showIndex={this.state.showIndex} 
           showNav={this.state.showNav}
           thumbnailPosition={this.state.thumbnailPosition}
           slideDuration={parseInt(this.state.slideDuration)}
           slideInterval={parseInt(this.state.slideInterval)}
           additionalClass="app-image-gallery"
         />
+
+        <div className="app-footer">
+          <div className="app-footer-title">
+          <br />
+          Pause/Play music → 
+            <iframe 
+              width="20" 
+              height="20"
+              style={{marginBottom: -3.4, marginLeft: 7}}
+              src="https://www.youtube.com/embed/HGVBp5ihvLE?modestbranding=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;rel=0&amp;playsinline=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+          </div>
+        </div>
       </section>
     );
   }

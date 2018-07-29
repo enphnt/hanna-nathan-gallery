@@ -21,6 +21,28 @@ label {
   margin-left: 5px;
 }
 
+.app-footer {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(204, 204, 204, 0.161);
+  margin-top: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-footer-title {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.app-footer-title h1, a {
+  font-size: 20px;
+  color: #222;
+}
+
 .app-header {
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -31,14 +53,16 @@ label {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+
 .app-header-title {
   flex: 1;
   text-align: center;
 }
 
 .app-header-title h1, a {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #222;
+  line-height: .7em;
 }
 
 .play-button {
