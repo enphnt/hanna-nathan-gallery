@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
 
 import ImageGallery from '../src/ImageGallery';
 
@@ -24,6 +25,9 @@ class App extends React.Component {
       thumbnailPosition: 'bottom',
       showVideo: {},
     };
+
+    ReactGA.initialize('UA-122570593-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
     this.images = [
       {
@@ -201,7 +205,7 @@ class App extends React.Component {
               width="20" 
               height="20"
               style={{marginBottom: -3.4, marginLeft: 7}}
-              src="https://www.youtube.com/embed/HGVBp5ihvLE?modestbranding=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;rel=0&amp;playsinline=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+              src="https://www.youtube.com/embed/HGVBp5ihvLE?modestbranding=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;rel=0&amp;playsinline=1" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
           </div>
         </div>
       </section>
